@@ -15,209 +15,519 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Transport Geo – грузчики Тбилиси">
     <meta name="description" content="Профессиональные грузчики в Тбилиси. Быстрая погрузка, выгрузка и доставка мебели и техники. Надежно, недорого, ежедневно. Закажите прямо сейчас!">
-    <meta name="keywords" content="грузчики Тбилиси, услуги грузчиков, перевозка мебели, переезд в Тбилиси, Transport Geo, доставка грузов по Грузии">
+    <meta name="keywords" content="грузчики Тбилиси, услуги грузчиков, перевозка мебели, переезд в Тбилиси, Transport Geo, доставка грузов по Грузии, квартирный переезд">
 
     <!-- Page Title -->
     <title>Грузчики в Тбилиси | Transport Geo – профессиональные услуги</title>
 
-    <!-- Favicon -->
+    <!-- Favicon Icon -->
     <link rel="icon" href="img/favicon.png">
 
-    <!-- Подключение Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
 
-    <!-- Подключение CSS напрямую с CDN (временное решение) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
-    <style>
-        /* Минимальный стиль для быстрой фиксации */
-        body {
-            font-family: 'Open Sans', sans-serif;
-            color: #4c4c4c;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f8f8f8;
-        }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
-        .section { padding: 60px 0; }
-        h1, h2, h3 { color: #333; font-weight: 600; }
-        h1 { font-size: 2.5rem; }
-        h2 { font-size: 2rem; text-align: center; margin-bottom: 30px; }
-        h3 { font-size: 1.5rem; }
-        .hero { background: url('img/hero-bg.jpg') center/cover no-repeat; color: white; text-align: center; padding: 120px 0; }
-        .testimonial-wrap { background-color: white; padding: 40px 0; }
-        .testimonial blockquote {
-            background: #f9f9f9;
-            border-radius: 10px;
-            padding: 25px;
-            margin: 15px auto;
-            max-width: 700px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .testimonial blockquote small {
-            display: block;
-            margin-top: 15px;
-            font-style: italic;
-            color: #555;
-        }
-        .btn {
-            background-color: #FF0000;
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            display: inline-block;
-            border-radius: 4px;
-            font-weight: 600;
-        }
-        .btn:hover { background-color: #e60000; }
-        .contact-info p { margin: 5px 0; }
-        footer { background: #333; color: white; text-align: center; padding: 20px 0; }
-        .social-btn a { color: white; margin: 0 10px; font-size: 18px; }
-        iframe { width: 100%; height: 400px; border: 0; }
-    </style>
+    <!-- Modernizr -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Transport Geo",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "проспект Гурамишвили, 23А",
+        "addressLocality": "Тбилиси",
+        "addressCountry": "Грузия"
+      },
+      "telephone": "+995 558 24 2910",
+      "email": "ssoltseva99@gmail.com",
+      "openingHours": "Mo-Su 09:00-22:00",
+      "sameAs": [
+        "https://facebook.com/gruzoperevozki.tbilisi/",
+        "https://instagram.com/transport.geo/"
+      ],
+      "description": "Профессиональные грузчики в Тбилиси. Погрузка, выгрузка, квартирные и офисные переезды, упаковка вещей, вывоз мусора."
+    }
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Грузчики в Тбилиси – надежные услуги грузоперевозок">
+    <meta property="og:description" content="Закажите услуги грузчиков в Тбилиси. Быстрая погрузка, доставка мебели, переезд квартир и офисов. Профессиональные грузчики, доступные цены. Звоните!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gruzoperevozki-tbilisi.github.io/Gruzoperevozki-Tbilisi/">
+    <meta property="og:image" content="https://gruzoperevozki-tbilisi.github.io/Gruzoperevozki-Tbilisi/img/about-img-1.jpg">
+    <meta property="og:site_name" content="Transport Geo">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Грузчики в Тбилиси – надежные услуги грузоперевозок">
+    <meta name="twitter:description" content="Профессиональные грузчики в Тбилиси. Быстрая погрузка, выгрузка и доставка мебели и техники. Закажите прямо сейчас!">
+    <meta name="twitter:image" content="https://gruzoperevozki-tbilisi.github.io/Gruzoperevozki-Tbilisi/img/about-img-1.jpg">
+    <meta name="twitter:site" content="@Allrttt">
+    <meta name="twitter:creator" content="@Allrttt">
 </head>
 <body>
 
-<!-- Telegram Button -->
+<!-- Подключение Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Telegram Floating Button -->
 <style>
 .telegram-float-left {
-    position: fixed; left: 20px; bottom: 20px; width: 50px; height: 50px;
-    background-color: #0088cc; color: white; border-radius: 50%;
-    text-align: center; line-height: 50px; font-size: 24px; z-index: 1000;
-    cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #0088cc;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    animation: bounce 2s ease infinite;
 }
 .telegram-tooltip-left {
-    position: fixed; left: 80px; bottom: 25px; background-color: #0088cc;
-    color: white; padding: 10px 15px; border-radius: 6px; font-size: 14px;
-    min-width: 180px; opacity: 0; visibility: hidden; transition: all 0.4s ease; z-index: 999;
+    position: fixed;
+    left: 80px;
+    bottom: 25px;
+    background-color: #0088cc;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    min-width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    z-index: 999;
 }
 .telegram-tooltip-left::after {
-    content: ''; position: absolute; top: 50%; left: -6px;
-    transform: translateY(-50%); border-width: 6px; border-style: solid;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    transform: translateY(-50%);
+    border-width: 6px;
+    border-style: solid;
     border-color: #0088cc transparent #0088cc #0088cc;
 }
 .telegram-float-left:hover + .telegram-tooltip-left {
-    opacity: 1; visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
-@media (max-width: 768px) { .telegram-tooltip-left { display: none; } }
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+@media (max-width: 768px) {
+    .telegram-tooltip-left { display: none; }
+}
 </style>
-<a href="https://t.me/Allrttt" target="_blank" class="telegram-float-left">
-    <i class="fab fa-telegram-plane"></i>
+<a href="https://t.me/Allrttt" target="_blank" class="telegram-float-left" title="Написать в Telegram">
+  <i class="fab fa-telegram-plane"></i>
 </a>
 <div class="telegram-tooltip-left">@Allrttt<br>+995 558 242 910</div>
 
-<!-- WhatsApp Button -->
+<!-- WhatsApp Floating Button -->
 <style>
 .whatsapp-float {
-    position: fixed; right: 20px; bottom: 20px; background-color: #25D366;
-    color: white; padding: 14px 20px; border-radius: 50px; text-decoration: none;
-    font-size: 16px; font-weight: bold; display: flex; align-items: center;
-    z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 .whatsapp-float img {
-    width: 26px; height: 26px; margin-right: 10px;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
 }
 </style>
 <a href="https://wa.me/995558242910" target="_blank" class="whatsapp-float">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> Написать
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  Написать в WhatsApp
 </a>
 
-<!-- Header -->
-<header class="site-header" style="background:#333; padding:15px 0;">
-    <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
-        <span style="color:white; font-size:24px; font-weight:bold;">TRANSPORT GEO</span>
-        <nav>
-            <a href="#about" style="color:white; margin:0 10px;">О нас</a>
-            <a href="#service" style="color:white; margin:0 10px;">Услуги</a>
-            <a href="#contact" style="color:white; margin:0 10px;">Контакты</a>
-        </nav>
-    </div>
-</header>
-
-<!-- Hero -->
-<section class="hero" id="home">
-    <div class="container">
-        <h1>Грузоперевозки в Тбилиси</h1>
-        <h3>Быстро • Аккуратно • По лучшим ценам</h3>
-        <a href="tel:+995558242910" class="btn">ЗАКАЗАТЬ ЗВОНОК</a>
-    </div>
-</section>
-
-<!-- Features -->
-<section class="feature section" style="background:#fff;">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4"><h3>ГРУЗОПЕРЕВОЗКИ ПО ГРУЗИИ</h3><p>Доставляем любые грузы быстро и безопасно.</p></div>
-            <div class="col-sm-4"><h3>УСЛУГИ ГРУЗЧИКОВ</h3><p>Профессиональные грузчики за 5 минут.</p></div>
-            <div class="col-sm-4"><h3>ПЕРЕЕЗДЫ «ПОД КЛЮЧ»</h3><p>От упаковки до расстановки мебели.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- Testimonials -->
-<div class="testimonial-wrap section">
-    <div class="container">
-        <h2>ОТЗЫВЫ КЛИЕНТОВ</h2>
-        <blockquote>
-            <p>Transport Geo помог мне перевезти квартиру. Ребята работают очень аккуратно, всё в целости и сохранности. Спасибо за отличную работу!</p>
-            <small>— Анна М., частный клиент</small>
-        </blockquote>
-        <blockquote>
-            <p>Заказывал доставку офисной мебели. Команда справилась за один день, всё было сделано четко и в срок. Очень доволен!</p>
-            <small>— Георгий К., бизнес-клиент</small>
-        </blockquote>
-        <blockquote>
-            <p>Перевозила антиквариат из Тбилиси в Батуми. Была приятно удивлена внимательным отношением к моему грузу. Рекомендую!</p>
-            <small>— Мариам Т., частный клиент</small>
-        </blockquote>
-    </div>
+<!-- Preloader -->
+<div id="preloader">
+    <div class="preloader-wave"></div>
 </div>
 
-<!-- Contact -->
-<section class="contact section" id="contact" style="background:#fff;">
-    <div class="container">
-        <h2>СВЯЖИТЕСЬ С НАМИ</h2>
-        <div style="max-width:600px; margin:0 auto;">
-            <p><strong>Адрес:</strong> Тбилиси, пр. Гурамишвили, 23А</p>
-            <p><strong>Телефон:</strong> <a href="tel:+995558242910">+995 558 24 2910</a></p>
-            <p><strong>Email:</strong> ssoltseva99@gmail.com</p>
-            <p><strong>Время работы:</strong> Ежедневно с 9:00 до 22:00</p>
-        </div>
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-wrap">
+    <div class="site-branding">
+      <span class="site-title"><a href="index.html">TRANSPORT GEO</a></span>
     </div>
+    <nav class="primary-nav">
+      <ul class="primary-nav-list nav">
+        <li class="menu-item"><a href="#home">Главная</a></li>
+        <li class="menu-item"><a href="#about">О нас</a></li>
+        <li class="menu-item"><a href="#service">Услуги</a></li>
+        <li class="menu-item"><a href="#work">Примеры работ</a></li>
+        <li class="menu-item"><a href="#team">Команда</a></li>
+        <li class="menu-item"><a href="#blog">Блог</a></li>
+        <li class="menu-item"><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero text-center" id="home">
+  <div class="single-slide parallax" style="background-image: url(img/hero-bg.jpg);">
+    <div class="container">
+      <h3>Профессиональные грузчики в Тбилиси</h3>
+      <h1>Transport Geo — ваш надёжный партнёр</h1>
+      <h3>Доставка мебели, техники, квартирные и офисные переезды</h3>
+      <div class="hero-btn-wrap text-center">
+        <a href="#about" class="hero-btn">УЗНАТЬ БОЛЬШЕ</a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Map -->
+<!-- Feature Section -->
+<section class="feature section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="single-feature">
+          <i class="icofont icofont-truck"></i>
+          <h3>ГРУЗОПЕРЕВОЗКИ ПО ГРУЗИИ</h3>
+          <p>Transport Geo предоставляет услуги по перевозке грузов любого объема и веса. Современный автопарк обеспечивает безопасную и своевременную доставку по всей территории Грузии.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="single-feature">
+          <i class="icofont icofont-people"></i>
+          <h3>УСЛУГИ ГРУЗЧИКОВ</h3>
+          <p>Наши опытные грузчики в Тбилиси аккуратно и оперативно выполнят погрузку и разгрузку вашего груза. Мы применяем профессиональные методики и качественные материалы для защиты ваших вещей.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="single-feature">
+          <i class="icofont icofont-home"></i>
+          <h3>ОФИСНЫЕ И КВАРТИРНЫЕ ПЕРЕЕЗДЫ</h3>
+          <p>Организуем переезд «под ключ». От демонтажа мебели до расстановки предметов на новом месте. Наши специалисты помогут сделать процесс максимально комфортным и быстрым.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="single-feature">
+          <i class="icofont icofont-box"></i>
+          <h3>ДОСТАВКА КРУПНОГАБАРИТНЫХ ГРУЗОВ</h3>
+          <p>Мы специализируемся на перевозке крупногабаритных и тяжелых грузов: пианино, холодильники, промышленное оборудование. Опыт и надежность гарантированы.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="single-feature">
+          <i class="icofont icofont-package"></i>
+          <h3>КОРОБКИ И УПАКОВКА</h3>
+          <p>Предоставляем качественные коробки и материалы для упаковки. Упакуем ваши вещи так, чтобы они остались в идеальном состоянии во время перевозки.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="single-feature">
+          <i class="icofont icofont-trash"></i>
+          <h3>ВЫВОЗ МУСОРА</h3>
+          <p>Организуем вывоз строительного и бытового мусора после ремонта или переезда. Соблюдаем экологические нормы и чистоту.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="about section" id="about">
+  <div class="container">
+    <div class="row about-us">
+      <div class="col-md-6">
+        <div class="about-img">
+          <img src="img/about-img-1.jpg" alt="Грузчики в Тбилиси погружают мебель" loading="lazy">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="about-details">
+          <h3>О НАС</h3>
+          <p><strong>Transport Geo</strong> — это команда профессионалов, которая готова взять на себя все сложности, связанные с перевозками. Мы предлагаем комплексные решения для частных лиц и бизнеса.</p>
+          <p>Наш опыт и современное оборудование позволяют выполнять задачи любой сложности быстро, надежно и безопасно. Специалисты Transport Geo имеют богатый опыт работы с жителями Тбилиси и регионами Грузии.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row what-we-do">
+      <div class="col-md-6">
+        <div class="about-details">
+          <h3>ЧТО МЫ ДЕЛАЕМ</h3>
+          <p>Мы организуем квартирные и офисные переезды, доставку грузов по Грузии, перевозку крупногабаритных предметов и даже утилизацию строительного мусора. Ваше доверие — наш приоритет.</p>
+          <p>Обратившись к нам, вы получите качественный сервис и индивидуальный подход к каждому клиенту. Ваш комфорт — наша цель.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="about-img">
+          <img src="img/about-img-2.jpg" alt="Переезд квартиры в Тбилиси" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Service Section -->
+<section class="service section" id="service">
+  <div class="container">
+    <div class="section-header white text-center">
+      <h2>НАШИ УСЛУГИ</h2>
+      <span class="section-separator"></span>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="single-service">
+          <i class="icofont icofont-truck-alt"></i>
+          <h3>ГРУЗОПЕРЕВОЗКИ ПО ГРУЗИИ</h3>
+          <p>Transport Geo доставляет грузы любого объема и веса. В нашем автопарке — современные автомобили, которые обеспечивают своевременную и безопасную перевозку.</p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="single-service">
+          <i class="icofont icofont-people"></i>
+          <h3>УСЛУГИ ГРУЗЧИКОВ</h3>
+          <p>Наши грузчики бережно погрузят и разгрузят ваш груз. Мы используем профессиональные методики и качественные упаковочные материалы, чтобы сохранить целостность ваших вещей при транспортировке.</p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="single-service">
+          <i class="icofont icofont-home"></i>
+          <h3>ОФИСНЫЕ И КВАРТИРНЫЕ ПЕРЕЕЗДЫ</h3>
+          <p>Организуем переезд «под ключ» — от демонтажа мебели до расстановки на новом месте. Мы делаем процесс максимально комфортным и быстрым.</p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="single-service">
+          <i class="icofont icofont-box"></i>
+          <h3>ДОСТАВКА КРУПНОГАБАРИТНЫХ ГРУЗОВ</h3>
+          <p>Мы специализируемся на перевозке крупногабаритных и тяжелых грузов, таких как пианино, сейфы, холодильники и другие громоздкие предметы.</p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="single-service">
+          <i class="icofont icofont-boxed"></i>
+          <h3>КОРОБКИ И УПАКОВКА</h3>
+          <p>Предоставляем качественные коробки и материалы для упаковки. Упакуем ваши вещи так, чтобы они оставались в идеальном состоянии во время перевозки.</p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="single-service">
+          <i class="icofont icofont-trash"></i>
+          <h3>ВЫВОЗ МУСОРА</h3>
+          <p>Организуем вывоз строительного и бытового мусора после ремонта или переезда. Мы соблюдаем все нормы обращения с отходами и обеспечиваем чистоту.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonial Section -->
+<div class="testimonial-wrap section">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>ОТЗЫВЫ КЛИЕНТОВ</h2>
+      <span class="section-separator"></span>
+    </div>
+    <div class="testimonial owl-carousel text-center testimonial-white-bg">
+      <blockquote>
+        <p>Transport Geo помог мне перевезти квартиру. Ребята работают очень аккуратно, всё в целости и сохранности. Спасибо за отличную работу!</p>
+        <small>— Анна М., частный клиент</small>
+      </blockquote>
+      <blockquote>
+        <p>Заказывал доставку офисной мебели. Команда справилась за один день, всё было сделано четко и в срок. Очень доволен!</p>
+        <small>— Георгий К., бизнес-клиент</small>
+      </blockquote>
+      <blockquote>
+        <p>Перевозила антиквариат из Тбилиси в Батуми. Была приятно удивлена внимательным отношением к моему грузу. Рекомендую!</p>
+        <small>— Мариам Т., частный клиент</small>
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+<!-- Blog Section -->
+<section class="home-blog section" id="blog">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>НОВОСТИ</h2>
+      <span class="section-separator"></span>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <article class="post">
+          <header class="entry-header">
+            <a href="blog-details-1.html" target="_blank">
+              <img src="img/news1.jpg" alt="Как подготовиться к переезду в Тбилиси">
+            </a>
+            <div class="post-details-wrap">
+              <h2 class="entry-title"><a href="blog-details-1.html" target="_blank">Как подготовиться к переезду?</a></h2>
+              <div class="byline">
+                <span class="author"><i class="fa fa-user"></i> Transport Geo</span>
+                <span class="posted-on"><span>15 Окт</span> 2023</span>
+              </div>
+            </div>
+          </header>
+          <div class="entry-content">
+            <p>Переезд — это всегда стресс. Чтобы сделать процесс максимально комфортным, мы подготовили несколько полезных советов...</p>
+            <a href="blog-details-1.html" class="t-btn t-btn-ex-small read-more-btn" target="_blank">Читать далее</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6">
+        <article class="post">
+          <header class="entry-header">
+            <a href="blog-details-2.html" target="_blank">
+              <img src="img/new2.jpg" alt="Выбор транспорта для грузоперевозок в Грузии">
+            </a>
+            <div class="post-details-wrap">
+              <h2 class="entry-title"><a href="blog-details-2.html" target="_blank">Как выбрать транспорт для перевозки груза?</a></h2>
+              <div class="byline">
+                <span class="author"><i class="fa fa-user"></i> Transport Geo</span>
+                <span class="posted-on"><span>10 Окт</span> 2023</span>
+              </div>
+            </div>
+          </header>
+          <div class="entry-content">
+            <p>Выбор транспорта зависит от типа и объема груза. Мы расскажем, как не ошибиться и выбрать оптимальный вариант для доставки.</p>
+            <a href="blog-details-2.html" class="t-btn t-btn-ex-small read-more-btn" target="_blank">Читать далее</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>СВЯЖИТЕСЬ С НАМИ</h2>
+      <span class="section-separator"></span>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="contact-info">
+          <div class="single-info">
+            <i class="icofont icofont-location-pin"></i>
+            <h3>Адрес:</h3>
+            <p>Тбилиси, пр. Гурамишвили, 23А</p>
+          </div>
+          <div class="single-info">
+            <i class="icofont icofont-phone"></i>
+            <h3>Телефон:</h3>
+            <p>+995 558 24 2910</p>
+          </div>
+          <div class="single-info">
+            <i class="icofont icofont-email"></i>
+            <h3>Email:</h3>
+            <p>ssoltseva99@gmail.com</p>
+          </div>
+          <div class="single-info">
+            <i class="icofont icofont-clock-time"></i>
+            <h3>Время работы:</h3>
+            <p>Ежедневно с 9:00 до 22:00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <form action="mail.php" class="contact-form" method="post" id="cf">
+          <input type="text" placeholder="Имя" required>
+          <input type="email" placeholder="Email" required>
+          <textarea rows="5" placeholder="Сообщение" required></textarea>
+          <button type="submit" class="t-btn submit-btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map Section -->
 <section class="map-wrap section">
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2137.546097553783!2d44.77774731569343!3d41.72595697915503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404473c8ad5aef45%3A0x2e7cf582f7bce0a9!2sGuramishvili%20Ave%2023%2C%20Tbilisi!5e0!3m2!1sen!2sge!4v1731000000000!5m2!1sen!2sge" 
-        allowfullscreen="" loading="lazy"></iframe>
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2137.546097553783!2d44.77774731569343!3d41.72595697915503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404473c8ad5aef45%3A0x2e7cf582f7bce0a9!2sGuramishvili%20Ave%2023%2C%20Tbilisi!5e0!3m2!1sen!2sge!4v1731000000000!5m2!1sen!2sge" 
+    width="100%" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
 </section>
 
 <!-- Footer -->
 <footer class="site-footer black-bg">
-    <div class="container">
-        <p class="copy-right">© 2025 Transport Geo. Все права защищены.</p>
-        <div class="social-btn">
-            <a href="https://facebook.com/gruzoperevozki.tbilisi/"><i class="fab fa-facebook"></i></a>
-            <a href="https://instagram.com/transport.geo/"><i class="fab fa-instagram"></i></a>
-        </div>
+  <div class="container">
+    <p class="copy-right">© 2025 Transport Geo. Все права защищены.</p>
+    <div class="social-btn">
+      <a href="https://facebook.com/gruzoperevozki.tbilisi/"><i class="icofont icofont-social-facebook"></i></a>
+      <a href="https://instagram.com/transport.geo/"><i class="icofont icofont-social-instagram"></i></a>
     </div>
+  </div>
 </footer>
 
 <!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    // Простой слайдер отзывов
-    $(document).ready(function(){
-        $('.testimonial-wrap blockquote').hide().first().show();
-        let i = 0;
-        setInterval(() => {
-            $('.testimonial-wrap blockquote').eq(i).fadeOut(300);
-            i = (i + 1) % $('.testimonial-wrap blockquote').length;
-            $('.testimonial-wrap blockquote').eq(i).fadeIn(300);
-        }, 5000);
-    });
-</script>
+<script src="js/vendor/jquery-3.2.0.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJT43PP4" 
+          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+<!-- Mobile Fix & White Background for Testimonials -->
+<style>
+  .testimonial-wrap {
+    background-color: white !important;
+    padding: 40px 0;
+  }
+  .testimonial blockquote {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    color: #333;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .testimonial blockquote small {
+    display: block;
+    margin-top: 20px;
+    color: #666;
+    font-style: italic;
+  }
+  @media (max-width: 768px) {
+    h1, h2, h3 { font-size: 1.5rem !important; text-shadow: none !important; }
+    .hero-btn { font-size: 1.1rem; }
+    body, html { overflow-x: hidden; }
+  }
+</style>
 
 </body>
 </html>
